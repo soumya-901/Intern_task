@@ -1,9 +1,8 @@
 const express = require ('express');
-const { config } = require("dotenv");
 const mongoose = require ('mongoose');
 const app = express ();
 const middlewear = require('./middlewear');
-config().env;
+require("dotenv").config();
 const PORT = process.env.port || 3000;
 const DB = process.env.db;
 
