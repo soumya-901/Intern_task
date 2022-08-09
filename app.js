@@ -3,7 +3,7 @@ const mongoose = require ('mongoose');
 const app = express ();
 const middlewear = require('./middlewear');
 require("dotenv").config();
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const DB = process.env.db;
 
 app.use (express.json());
